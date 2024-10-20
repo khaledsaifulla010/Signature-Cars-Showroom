@@ -4,7 +4,9 @@ import CarCard from "../CarCard/CarCard";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
-  console.log(cars);
+
+  const [carCart, setCarCart] = useState([])
+
 
   useEffect(() => {
     fetch("cars.json")
@@ -12,8 +14,12 @@ const Cars = () => {
       .then((data) => setCars(data));
   }, []);
 
+
+
   const handleAddToCart = (car)=>{
-    console.log(car);
+    const newCarCart = [...carCart, car]
+    
+    setCarCart(newCarCart)
   }
 
   return (
@@ -21,6 +27,8 @@ const Cars = () => {
       <h1>Signature Cars Showroom</h1>
 
       <h3>Total Cars : {cars.length} </h3>
+
+      <h4>My Cart : {carCart.length} </h4>
 
       <div
         style={{

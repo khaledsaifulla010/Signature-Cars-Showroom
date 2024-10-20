@@ -5,7 +5,7 @@ const CarCard = ({ car, handleAddToCart }) => {
     <div
       style={{
         marginTop: "100px",
-        border: "2px solid pink",
+        border: "1px solid pink",
         borderRadius: "20px",
         backgroundColor: "#f0fdf4",
       }}
@@ -24,7 +24,21 @@ const CarCard = ({ car, handleAddToCart }) => {
       <h3>Name : {name} </h3>
       <h4>Model: {model} </h4>
 
-      <button onClick={() => handleAddToCart(car)}>Purchase</button>
+      <button
+        className="ubuntu-bold"
+        style={{
+          padding: "8px",
+          marginBottom: "10px",
+          fontSize: "16px",
+          borderRadius: "10px",
+          background: "tomato",
+          color: "white",
+          border: "none",
+        }}
+        onClick={() => handleAddToCart(car)}
+      >
+        Purchase
+      </button>
     </div>
   );
 };
