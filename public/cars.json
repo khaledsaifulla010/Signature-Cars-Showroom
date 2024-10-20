@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Toyota Camry",
+    "model": "Camry XSE",
+    "price": 28000,
+    "description": "A comfortable midsize sedan with a spacious interior and smooth ride.",
+    "year": 2022,
+    "image": "https://i.ibb.co.com/ZccZBTL/Toyota-carmy.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Honda Civic",
+    "model": "Civic EX",
+    "price": 25000,
+    "description": "A reliable compact car with excellent fuel efficiency and modern features.",
+    "year": 2021,
+    "image": "https://i.ibb.co.com/86WVDvB/Honda-civic.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ford Mustang",
+    "model": "Mustang GT",
+    "price": 40000,
+    "description": "A powerful sports car with a V8 engine and a sleek design.",
+    "year": 2023,
+    "image": "https://i.ibb.co.com/NNJLr2k/Ford-Mustang.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chevrolet Tahoe",
+    "model": "Tahoe LT",
+    "price": 52000,
+    "description": "A large SUV with a strong engine and a spacious cabin, great for families.",
+    "year": 2023,
+    "image": "https://i.ibb.co.com/cYNXbkt/Chevrolet-Tahoe.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tesla Model 3",
+    "model": "Model 3 Long Range",
+    "price": 48000,
+    "description": "A cutting-edge electric sedan with impressive range and technology.",
+    "year": 2022,
+    "image": "https://i.ibb.co.com/MMfmXzm/Tesla.jpg"
+  },
+  {
+    "id": 6,
+    "name": "BMW X5",
+    "model": "X5 xDrive40i",
+    "price": 60000,
+    "description": "A luxury SUV with a premium interior and advanced features.",
+    "year": 2023,
+    "image": "https://i.ibb.co.com/swywT9Z/Bmw.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Audi A4",
+    "model": "A4 Premium",
+    "price": 45000,
+    "description": "A compact luxury sedan with a refined ride and modern tech.",
+    "year": 2022,
+    "image": "https://i.ibb.co.com/nCPZcp8/Audi.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mercedes-Benz C-Class",
+    "model": "C300 4MATIC",
+    "price": 55000,
+    "description": "A high-end luxury sedan with advanced safety and tech features.",
+    "year": 2023,
+    "image": "https://i.ibb.co.com/ZccZBTL/Toyota-carmy.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Nissan Altima",
+    "model": "Altima SR",
+    "price": 29000,
+    "description": "A midsize sedan with a sporty feel and excellent fuel economy.",
+    "year": 2022,
+    "image": "https://i.ibb.co.com/cYNXbkt/Chevrolet-Tahoe.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Hyundai Sonata",
+    "model": "Sonata Limited",
+    "price": 33000,
+    "description": "A stylish sedan with a comfortable ride and plenty of tech features.",
+    "year": 2021,
+    "image": "https://i.ibb.co.com/NNJLr2k/Ford-Mustang.jpg"
+  }
+]
