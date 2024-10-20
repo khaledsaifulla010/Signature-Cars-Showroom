@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import CarCard from "../CarCard/CarCard";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
@@ -11,9 +12,31 @@ const Cars = () => {
       .then((data) => setCars(data));
   }, []);
 
+  const handleAddToCart = (car)=>{
+    console.log(car);
+  }
+
   return (
-    <div>
-      <h1 className="ubuntu-bold">Signature Cars Showroom</h1>
+    <div className="ubuntu-bold">
+      <h1>Signature Cars Showroom</h1>
+
+      <h3>Total Cars : {cars.length} </h3>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 650px)",
+          gap: "50px",
+        }}
+      >
+        {cars.map((car) => (
+          <CarCard
+            key={car.id}
+            car={car}
+            handleAddToCart={handleAddToCart}
+          ></CarCard>
+        ))}
+      </div>
     </div>
   );
 };
