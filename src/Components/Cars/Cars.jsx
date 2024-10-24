@@ -1,12 +1,15 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import CarCard from "../CarCard/CarCard";
+import {
+  carCartAddToLocalStorage,
+  getStoredCart,
+} from "../../utilities/localStorage";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
 
-  const [carCart, setCarCart] = useState([])
-
+  const [carCart, setCarCart] = useState([]);
 
   useEffect(() => {
     fetch("cars.json")
@@ -14,13 +17,34 @@ const Cars = () => {
       .then((data) => setCars(data));
   }, []);
 
+  // Load acr cart from Local Storage
 
+  useEffect(() => {
+    console.log(cars.length);
 
-  const handleAddToCart = (car)=>{
-    const newCarCart = [...carCart, car]
-    
-    setCarCart(newCarCart)
-  }
+    if (cars.length) {
+      const storedCart = getStoredCart();
+      console.log(storedCart);
+
+      const savedCart = [];
+
+      for (const id of storedCart) {
+        const car = cars.find((car) => car.id === id);
+        if (car) {
+          savedCart.push(car);
+        }
+      }
+      console.log(savedCart);
+      setCarCart(savedCart);
+    }
+  }, [cars]);
+
+  const handleAddToCart = (car) => {
+    const newCarCart = [...carCart, car];
+
+    setCarCart(newCarCart);
+    carCartAddToLocalStorage(car.id);
+  };
 
   return (
     <div className="ubuntu-bold">
